@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="小站笔记，记录网站和互联网的简单知识。">
+  <title>小站笔记 | 一点一点，把想法放上网</title>
+  <style>
+    :root{color-scheme:light;--ink:#142d29;--muted:#546960;--bg:#f7f8f2;--paper:#fff;--line:#dce5d9;--accent:#2a715d}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Microsoft YaHei",sans-serif;line-height:1.8}a{color:var(--accent);text-underline-offset:4px}header,main,footer{max-width:880px;margin:auto;padding-left:24px;padding-right:24px}.top{display:flex;align-items:center;justify-content:space-between;padding-top:26px;padding-bottom:26px}.brand{text-decoration:none;font-weight:800;letter-spacing:.06em;color:var(--ink)}nav a{font-size:.9rem;text-decoration:none;margin-left:20px}.hero{padding:54px 0 58px}.eyebrow{font-size:.75rem;letter-spacing:.18em;color:var(--accent);font-weight:700}.hero h1{font-size:clamp(2.3rem,7vw,4.3rem);letter-spacing:-.045em;line-height:1.12;margin:15px 0 18px}.hero p{max-width:570px;color:var(--muted);font-size:1.05rem}.divider{height:1px;background:var(--line)}.section-title{display:flex;justify-content:space-between;align-items:baseline;margin:32px 0 14px}.section-title h2{font-size:1rem;letter-spacing:.08em;margin:0}.section-title span,.meta{font-size:.82rem;color:var(--muted)}article{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:clamp(24px,5vw,48px);margin-bottom:32px;box-shadow:0 12px 35px #153d2a08}article h2{line-height:1.3;font-size:clamp(1.65rem,5vw,2.3rem);letter-spacing:-.03em;margin:12px 0 10px}article h3{margin:30px 0 8px;font-size:1.15rem}article p{color:#354a43;margin:10px 0}.tag{display:inline-block;padding:3px 10px;border-radius:30px;background:#e6f1e9;color:#245b49;font-size:.78rem;font-weight:700}.references{border-top:1px solid var(--line);padding-top:20px;margin-top:32px;font-size:.9rem}footer{border-top:1px solid var(--line);padding-top:26px;padding-bottom:40px;color:var(--muted);font-size:.85rem}@media(max-width:480px){.hero{padding:38px 0 42px}nav a{margin-left:12px}article{border-radius:14px}}
+  </style>
+</head>
+<body>
+  <header class="top"><a class="brand" href="#top">小站笔记</a><nav aria-label="导航"><a href="#article">文章</a><a href="#about">关于</a></nav></header>
+  <main id="top">
+    <section class="hero"><div class="eyebrow">A LITTLE CORNER OF THE WEB</div><h1>一点一点，<br>把想法放上网。</h1><p>一个简单的个人博客。记录网站、技术与日常学习中的小发现。</p></section>
+    <div class="divider"></div>
+    <div class="section-title"><h2>最近的笔记</h2><span>01 / 建站基础</span></div>
+    <article id="article"><span class="tag">建站入门</span><h2>域名、DNS 和 HTTPS：网站是怎样被访问的？</h2><div class="meta"><time datetime="2026-11-23">2026 年 11 月 23 日</time> · 约 3 分钟</div>
+      <p>输入一个网址后，浏览器会先找到网站所在的位置，再与网站建立连接。了解这几个基础概念，排查网站打不开的问题就容易多了。</p>
+      <h3>域名：便于记忆的地址</h3><p>域名是人们容易记住的网站名称。浏览器需要知道网站服务器的网络地址，才能向它发出请求；这一步通常由 DNS 帮忙完成。</p>
+      <h3>DNS：把名称转换成可用的地址</h3><p>DNS 像互联网的通讯录，把域名解析成设备可以使用的 IP 地址。DNS 记录发生变化后，缓存可能不会立即更新；因此不同网络看到的结果有时会短暂不同。</p>
+      <h3>HTTPS：为连接加密</h3><p>HTTPS 使用 TLS 加密浏览器与服务器之间的数据。证书帮助浏览器验证所连接的网站；证书不正确或过期时，浏览器通常会给出警告。</p>
+      <h3>网站打不开时，先检查什么？</h3><p>可以先确认域名是否有效、DNS 记录是否正确，再检查网站服务是否在线、证书是否覆盖当前域名。修改配置后，留一点时间给 DNS 和证书生效。</p>
+      <div class="references"><strong>延伸阅读：</strong> <a href="https://www.cloudflare.com/learning/dns/what-is-dns/">Cloudflare：DNS 是什么？</a> · <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTTPS">MDN：HTTPS</a></div>
+    </article>
+  </main>
+  <footer id="about"><strong>小站笔记</strong><br>一个持续整理与分享的小角落。</footer>
+</body>
+</html>
